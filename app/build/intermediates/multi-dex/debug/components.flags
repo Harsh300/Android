@@ -1,0 +1,106 @@
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-9.4.0.aar\da40bbbbb96f9fdf288e547a2a0e4e45\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.4.0.aar\1eed09440bd6220d8f7b93e86101b6b0\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.4.0.aar\3ddc04864a25e15e428b68416d10d469\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\7f0ea6cf40b4baa34a6cbb4ebc5dadfe\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\7f0ea6cf40b4baa34a6cbb4ebc5dadfe\jars\libs\internal_impl-23.0.0.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.4.0.aar\713430e714e821821663e3919b6f473e\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.14.1\b35bb849e7bda4497fe6dfce4bd9f332087c2e3b\parse-android-1.14.1.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\93be562498eb7748ad9340c1af1484fa\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1f8ff75e659d0b684e96141e317dc223\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.4.0.aar\c37db3518d6f64cb94b1efee07f749ad\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-ads-9.4.0.aar\55edcae5e7740fe8b39c58131fcd4aca\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.4.0.aar\b32c7b42a214b5d6fa30c86ec6ac890e\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.4.0.aar\d2f9851466359b2993420623c5031e5c\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-9.4.0.aar\e319b99d3cfacb46b69ededfc2bbde78\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.4.0.aar\7d7bb9e045967299aeb8b685438a7390\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.4.0.aar\5d515384b82be0fc70c3424e8fee0590\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.4.0.aar\8f8265e68fb6e2f282655b33741880b4\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.4.0.aar\46f8179e2970d3ff9c7d910ebb35f94b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.4.0.aar\99b0fbf759f5c06c4be73109e77f436b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-config-9.4.0.aar\c319f1fdd1bdf7bb70a6b012b2468e1d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.4.0.aar\d8599928cd5d496a011f9e66566a79d4\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.4.0.aar\4f9fda1628aa5d1814db156e0fe4aba8\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-games-9.4.0.aar\f4277a51af9327e0eee9adaf88342105\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.4.0.aar\5e65a4f08533164c159a3ed9fd8c9054\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.4.0.aar\9e46d3a1bd595d6e2e2d1c225d6c8257\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.4.0.aar\67e66570963a35d5607579511887da53\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.4.0.aar\d932042c5a60050fa07fee249de83730\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-database-9.4.0.aar\5e2b2068ce84bcd6c053b6f96a3c962a\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.4.0.aar\564a5727361ef6943f782ee7a46a6e79\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.4.0.aar\c85899a5a303aa8eaddae1fc327e39f0\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.4.0.aar\cf9131a8a9cdd91f8b36ac8f85a11f92\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.4.0.aar\be172285f5359686910ace3ea629681d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.4.0.aar\3476385dea976c56987c23bbe1f3ea5b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.4.0.aar\1b3655380133fa62f9df47e2acd755d7\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-wallet-9.4.0.aar\825346c235510e82a8f7a26939f9a1ac\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.4.0.aar\62f15ee2d5aa23ffa59222b5e78cbc33\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.4.0.aar\f929f9e896835b52fcdf0e076e493867\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-location-9.4.0.aar\02dee75c7d1fbc0b01b10adfd749de1b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-places-9.4.0.aar\abea925b1fb5a450c1a5f2b05478b1e7\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\275416d431eafcaac855602f3837b3fc\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.4.0.aar\dbe7f7d5f4017e49d5d877dea767f5de\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.4.0.aar\6eba3313aa4df4c4bd6be6974f808f80\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.4.0.aar\74f54f12642d394371f8d268fb073226\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.4.0.aar\1ffde19bb471ca491d09942c795df5bd\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\71df4625145ff47009ec48f7f09d9b87\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.4.0.aar\2488f4637849b0d978bafbaee8bde920\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-base-9.4.0.aar\3aeabc1a6756176d6380666a95a0bf33\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.4.0.aar\7442f597c23f4d8cefdb5fd7f1c2eaad\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.4.0.aar\e0c7cf84a921c46ad56b0cf1a75cb6de\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.4.0.aar\5a77c1fa36b60fb652e3b4a7630e7fb1\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.4.0.aar\72b2b2b619726e2f225fbaf18547c9d0\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.4.0.aar\4097445eb6b9320b7d1c6ae23ef272ae\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\firebase-common-9.4.0.aar\e90b2f22a0afb1bcc2a26422495216a1\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.4.0.aar\3766bdfb0996aa2324f22588d665dd32\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.4.0.aar\079fee828e3aac5e539fb27c4f0bcda1\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\88ca326da22ab1c51dd7cd14ab241940\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.4.0.aar\0c551b8bb5c20070a24085b008002433\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\607fe283628dcaad88842fdb36120b95\jars\classes.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\607fe283628dcaad88842fdb36120b95\jars\libs\internal_impl-23.4.0.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar'(**.class)
+-injars 'C:\Users\Onique\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar'(**.class)
+-injars 'C:\Users\Onique\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar'(**.class)
+-injars 'C:\Users\Onique\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar'(**.class)
+-injars 'C:\Users\Onique\AndroidStudioProjects\Final-Project\app\build\intermediates\classes\debug'(**.class)
+-outjars 'C:\Users\Onique\AndroidStudioProjects\Final-Project\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\Onique\AppData\Local\Android\Sdk\build-tools\26.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'C:\Users\Onique\AndroidStudioProjects\Final-Project\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+# Referenced at C:\Users\Onique\AndroidStudioProjects\Final-Project\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:38
+-keep class com.parse.starter.StarterApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}
