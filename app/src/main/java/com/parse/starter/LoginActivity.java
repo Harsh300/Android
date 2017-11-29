@@ -24,7 +24,7 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
   Boolean loginModeActive = false;
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                       }
 
-                      Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                      Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                   }
               }
           });
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
                       }
 
-                      Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                      Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                   }
               }
           });
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_login);
 
     setTitle("Login");
 
