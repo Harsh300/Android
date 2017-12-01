@@ -45,10 +45,8 @@ public class LoginActivity extends AppCompatActivity {
       if (loginModeActive){
 
           loginModeActive = false;
-
           loginSignupButton.setText("Sign Up");
-
-          toggleLoginModeTextView.setText("Or, login");
+          toggleLoginModeTextView.setText("Or, Click here to login!");
 
       }else{
 
@@ -56,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
 
           loginSignupButton.setText("Login");
 
-          toggleLoginModeTextView.setText("Or, sign up");
+          toggleLoginModeTextView.setText("Or, Click here to sign up!");
       }
   }
 
@@ -129,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
 
-    setTitle("Login");
+    setTitle("Study Buddy");
 
     redirectIfLoggedIn();
     
