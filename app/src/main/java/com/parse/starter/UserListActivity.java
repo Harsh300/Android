@@ -60,4 +60,10 @@ public class UserListActivity extends AppCompatActivity {
         });
 
     }
+
+    public void backToMapButton(View view) {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.putExtra("activityID", "UserListActivity");
+        startActivity(intent);
+    }
 }

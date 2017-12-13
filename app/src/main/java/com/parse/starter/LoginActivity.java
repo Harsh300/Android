@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
       if (ParseUser.getCurrentUser() != null){
           Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+          intent.putExtra("activityID", "LoginActivity");
           startActivity(intent);
       }
   }
@@ -39,21 +40,15 @@ public class LoginActivity extends AppCompatActivity {
   public void toggleLoginMode(View view){
       //Log.i("Info", "Mode toggled");
       Button loginSignupButton = (Button) findViewById(R.id.loginSignupButton);
-
       TextView toggleLoginModeTextView = (TextView) findViewById(R.id.toggleLoginModeTextView);
 
       if (loginModeActive){
-
           loginModeActive = false;
           loginSignupButton.setText("Sign Up");
           toggleLoginModeTextView.setText("Or, Click here to login!");
-
       }else{
-
           loginModeActive = true;
-
           loginSignupButton.setText("Login");
-
           toggleLoginModeTextView.setText("Or, Click here to sign up!");
       }
   }
@@ -61,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
   public void signupLogin(View view){
 
       EditText usernameEditText = (EditText) findViewById(R.id.usernameEditText);
-
       EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
 
       if (loginModeActive){
@@ -69,20 +63,13 @@ public class LoginActivity extends AppCompatActivity {
               @Override
               public void done(ParseUser user, ParseException e) {
                   if (e == null){
-
                       Log.i("Info", "user logged in");
-
                       redirectIfLoggedIn();
-
                   }else{
                       String message = e.getMessage();
-
                       if (message.toLowerCase().contains("java")){
-
                           message = e.getMessage().substring(e.getMessage().indexOf(" "));
-
                       }
-
                       Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                   }
               }
@@ -90,29 +77,21 @@ public class LoginActivity extends AppCompatActivity {
 
       }else {
           ParseUser user = new ParseUser();
-
           user.setUsername(usernameEditText.getText().toString());
-
           user.setPassword(passwordEditText.getText().toString());
-
 
           user.signUpInBackground(new SignUpCallback() {
               @Override
               public void done(ParseException e) {
                   if (e == null){
-
                       Log.i("Info", "user signed up");
-
                       redirectIfLoggedIn();
                   }else {
                       String message = e.getMessage();
 
                       if (message.toLowerCase().contains("java")){
-
                           message = e.getMessage().substring(e.getMessage().indexOf(" "));
-
                       }
-
                       Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                   }
               }
@@ -126,11 +105,9 @@ public class LoginActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
-
     setTitle("Study Buddy");
-
     redirectIfLoggedIn();
-    
+
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
   }
 
