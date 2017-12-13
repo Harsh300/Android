@@ -1932,6 +1932,10 @@
         "source": "C:\\Users\\Onique\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\713430e714e821821663e3919b6f473e\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Onique\\AndroidStudioProjects\\Final-Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_chat_message.xml.flat",
+        "source": "C:\\Users\\Onique\\AndroidStudioProjects\\Final-Project\\app\\src\\main\\res\\layout\\chat_message.xml"
+    },
+    {
         "merged": "C:\\Users\\Onique\\AndroidStudioProjects\\Final-Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_cast_connected_white_24.png.flat",
         "source": "C:\\Users\\Onique\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-9.4.0.aar\\1eed09440bd6220d8f7b93e86101b6b0\\res\\drawable-xhdpi-v4\\quantum_ic_cast_connected_white_24.png"
     },

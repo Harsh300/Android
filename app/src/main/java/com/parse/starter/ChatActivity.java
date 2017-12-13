@@ -62,7 +62,10 @@ public class ChatActivity extends AppCompatActivity{
 
         setTitle("Chat with " + activeUser);
 
-        arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, messages);
+        //arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, messages);
+        //arrayAdapter = new ArrayAdapter(this, R.layout.chat_message, messages);
+        arrayAdapter = new MessageListAdapter(this,R.layout.chat_message,messages);
+
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -117,4 +120,8 @@ public class ChatActivity extends AppCompatActivity{
         },5000);
     }
 
+    public void onBackButtonClick(View view) {
+        Intent intent = new Intent(this, UserListActivity.class);
+        startActivity(intent);
+    }
 }
