@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Onique\\AndroidStudioProjects\\Final-Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\Andrew Selvarajah\\AndroidStudioProjects\\Final-Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Onique\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\713430e714e821821663e3919b6f473e\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Andrew Selvarajah\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\3db1f4ece26acf772cfe430bde21e7fd\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,40,45,50,52,54,55,56,107,159",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Onique\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-9.4.0.aar\\5d515384b82be0fc70c3424e8fee0590\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\Andrew Selvarajah\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-9.4.0.aar\\5dc0348d0c528d947301934f6441c950\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

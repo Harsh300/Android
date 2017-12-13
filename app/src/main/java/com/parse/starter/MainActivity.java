@@ -1,5 +1,6 @@
 package com.parse.starter;
 
+import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new Tab2Fragment(), "TAB2");
         adapter.addFragment(new MapFragment(), "MAP");
         viewPager.setAdapter(adapter);
+    }
+    private Context getContext(){
+        return this;
     }
 
 }
