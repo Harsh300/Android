@@ -1,12 +1,13 @@
 package com.parse.starter;
 
-import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,18 +19,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent i = getIntent();
+        String activityID = i.getStringExtra("activityID");
         setContentView(R.layout.activity_main);
 
-        Log.d(TAG, "onCreate: Starting");
-
-        mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
-
         //set up the ViewPager with the sections adapter
+        mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.container);
         setupViewPager(mViewPager);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        if (activityID.equals("UserListActivity")){
+            tabLayout.getTabAt(2).select();
+        }else {
+            tabLayout.getTabAt(1).select();
+        }
 
     }
 
@@ -40,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new MapFragment(), "MAP");
         viewPager.setAdapter(adapter);
     }
-    private Context getContext(){
-        return this;
-    }
+
 
 }

@@ -36,23 +36,21 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private final static int MY_PERMISSION_FINE_LOCATION = 101;
 
     public static final String TAG = "MapFragment";
-    private Button btnTEST3;
+    private Button chatHistoryButton;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.map_fragment, container, false);
-        btnTEST3 = (Button) mView.findViewById(R.id.btnTEST3);
-        btnTEST3.setOnClickListener(new View.OnClickListener() {
+        chatHistoryButton = (Button) mView.findViewById(R.id.chatHistoryButton);
+        chatHistoryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 3", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), UserListActivity.class);
                 startActivity(intent);
             }
         });
-
         return mView;
     }
 
@@ -65,7 +63,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             googleMap.onCreate(null);
             googleMap.onResume();
             googleMap.getMapAsync(this);
-
         }
     }
 
@@ -74,13 +71,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(final GoogleMap googleMap) {
         MapsInitializer.initialize(getContext());
         mGoogleMap = googleMap;
-
-      /*  googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.689247, -74.044502)).title("Statue of Liberty").snippet("I hope to go there someday."));
-        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(40.689247, -74.044502)).zoom(16).zoom(16).bearing(0).tilt(45).build();
-        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(Liberty));
-        */
-
         mGoogleMap.clear();
 
         LatLng userLocation = new LatLng(43.8247809, -79.2225708);
