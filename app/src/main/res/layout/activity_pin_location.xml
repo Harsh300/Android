@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.PinLocationActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="What course are you studying?" />
+
+    <EditText
+        android:id="@+id/courseCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="Course Code" />
+
+    <Button
+        android:id="@+id/pinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pinLocationButtonClick"
+        android:text="PIN" />
+</LinearLayout>

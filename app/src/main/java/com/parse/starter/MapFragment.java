@@ -14,6 +14,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,14 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -49,12 +57,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     public static final String TAG = "MapFragment";
     private Button chatHistoryButton;
+    private Button pinLocationButton;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.map_fragment, container, false);
+
         chatHistoryButton = (Button) mView.findViewById(R.id.chatHistoryButton);
         chatHistoryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +73,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 startActivity(intent);
             }
         });
+
+        pinLocationButton = (Button) mView.findViewById(R.id.pinLocationButton);
+        pinLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PinLocationActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return mView;
     }
 
@@ -111,6 +131,28 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation));
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
             mGoogleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+
+            ParseQuery<ParseObject> mapMarkersQuery = new ParseQuery<ParseObject>("UserMapLocation");
+
+            mapMarkersQuery.whereNotEqualTo("username", ParseUser.getCurrentUser().getUsername());
+            mapMarkersQuery.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+                    if (e == null){
+                        if (objects.size() > 0){
+                            for (ParseObject UserMapLocation : objects){
+                                String courseCode = UserMapLocation.getString("courseCode");
+                                String user = UserMapLocation.getString("username");
+                                LatLng markerLocation = new LatLng(UserMapLocation.getDouble("latitude"),UserMapLocation.getDouble("longitude"));
+
+                                mGoogleMap.addMarker(new MarkerOptions().position(markerLocation).title(user + " : " + courseCode));
+                                Log.i("marker course codes", courseCode);
+                                Log.i("latlng", markerLocation.toString());
+                            }
+                        }
+                    }
+                }
+            });
         }catch (SecurityException e){
             e.printStackTrace();
         }
