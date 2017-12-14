@@ -21,11 +21,12 @@ public class Tab1Fragment extends Fragment {
     public static final String TAG = "Tab1Fragment";
     private EditText min, sec;
     private TextView time;
-    private Button start, stop, reset;
+    private Button start, stop, finish;
     private long millisec;
     private long minutes;
     private CountDownTimer countDownTimer;
     private View view;
+    private MediaPlayer mplayer;
     private boolean checkRun = false;
     private String setButton = "START";
 
@@ -35,49 +36,41 @@ public class Tab1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.tab1_fragment,container,false);
         setupUIViews();
+        finish.setVisibility(View.GONE);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(setButton.equals("START")){
-
-                    setButton = "STOP";
-
-
-
-                    if(checkRun == false) {
-                        String temp = min.getText().toString();
-                        minutes = (Long.parseLong(temp) * 60000);
-                        temp = sec.getText().toString();
-                        millisec = (Long.parseLong(temp) * 1000) + minutes;
-                        checkRun = true;
-
-
-                        countDownTimer = new CountDownTimer(millisec, 1000) {
-                            @Override
-                            public void onTick(long millisUntilFinished) {
-                                millisec = millisUntilFinished;
-                                updateTimer();
-
-                            }
-
-                            @Override
-                            public void onFinish() {
-                                time.setText("FINISHED!");
-                                MediaPlayer mplayer = MediaPlayer.create(getContext(), R.raw.metronome);
-                                mplayer.start();
-                                checkRun = false;
-
-
-                            }
-                        }.start();
-                    }
-                }
-                else {//FIX THIS SO THAT IT CONTINUES FROM CURRENT TIME
-                    checkRun = false;
+                if(checkRun == true){
                     countDownTimer.cancel();
-                    setButton = "START";
                 }
-                start.setText(setButton);
+                String temp = min.getText().toString();
+                minutes = (Long.parseLong(temp) * 60000);
+                temp = sec.getText().toString();
+                millisec = (Long.parseLong(temp) * 1000) + minutes;
+                checkRun = true;
+
+
+                countDownTimer = new CountDownTimer(millisec, 1000) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        millisec = millisUntilFinished;
+                        updateTimer();
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        time.setText("FINISHED!");
+                        mplayer = MediaPlayer.create(getContext(), R.raw.metronome);
+                        mplayer.setLooping(true);
+                        finish.setVisibility(View.VISIBLE);
+                        mplayer.start();
+
+                        checkRun = false;
+
+
+                    }
+                }.start();
 
 
             }
@@ -85,26 +78,20 @@ public class Tab1Fragment extends Fragment {
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    if(setButton.equals("CONTINUE")){
-
-                        countDownTimer.start();
-                        setButton = "STOP";
-
-                    }
-                else {
+                if (checkRun == true) {
                     checkRun = false;
                     countDownTimer.cancel();
-                    setButton = "CONTINUE";
                 }
-                stop.setText(setButton);
-
-
             }
+
+
+
         });
-        reset.setOnClickListener(new View.OnClickListener() {
+        finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countDownTimer.start();
+                mplayer.stop();
+                finish.setVisibility(View.GONE);
             }
         });
         return view;
@@ -115,7 +102,7 @@ public class Tab1Fragment extends Fragment {
         sec = (EditText)view.findViewById(R.id.seconds);
         start = (Button)view.findViewById(R.id.startbtn);
         stop = (Button)view.findViewById(R.id.stopbtn);
-        reset = (Button)view.findViewById(R.id.resetbtn);
+        finish = (Button)view.findViewById(R.id.finishbtn);
     }
 
 
@@ -129,10 +116,6 @@ public class Tab1Fragment extends Fragment {
         }
         temp += second;
         time.setText(temp);
-
-    }
-
-    public void onStop(View view1){
 
     }
 }

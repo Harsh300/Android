@@ -19,4 +19,9 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Map</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="stop">STOP</string>
+    <string name="seconds">Seconds</string>
+    <string name="minutes">Minutes</string>
+    <string name="start">Start</string>
+    <string name="finish">FINISH</string>
 </resources>

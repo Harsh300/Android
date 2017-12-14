@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
 MERGED from [com.android.support:design:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\b8b1ea68b3b5a5e67bf92f3aab91b456\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-9.4.0.aar\e03e35681e6c934412ab4f8270ad2c5c\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.4.0.aar\e20846d386d57283cff64dcb27690a79\AndroidManifest.xml:2:1-10:12
@@ -62,20 +62,20 @@ MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Andre
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.4.0.aar\97ea31c6ebeafff1e27f3c623e4c934b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.4.0.aar\3f2e9bbe4fc2151678029b021540dab0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\a5f7f2c506b293fcee5d8d807379482a\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
-INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
+INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
 	package
 		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:10:5-32
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-40:12
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:1-51:12
 		INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:9:11-69
@@ -137,8 +137,24 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:15:5-79
 	android:name
 		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:17:22-78
+uses-feature#0x00020000
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:19:5-21:35
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\25d746ac0a655d6120271803a2c38f39\AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\25d746ac0a655d6120271803a2c38f39\AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:20:9-41
+	android:required
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:21:9-32
 application
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:17:5-38:19
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:23:5-49:19
 MERGED from [com.android.support:design:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\b8b1ea68b3b5a5e67bf92f3aab91b456\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\b8b1ea68b3b5a5e67bf92f3aab91b456\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-9.4.0.aar\e03e35681e6c934412ab4f8270ad2c5c\AndroidManifest.xml:5:5-20
@@ -234,47 +250,55 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Andrew
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\a5f7f2c506b293fcee5d8d807379482a\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\a5f7f2c506b293fcee5d8d807379482a\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:21:9-41
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:27:9-41
 	android:icon
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:20:9-43
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:26:9-43
 	android:allowBackup
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:25:9-35
 	android:theme
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:28:9-40
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:18:9-43
-activity#com.parse.starter.LoginActivity
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:23:9-31:20
-	android:label
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:24:9-43
+activity#com.parse.starter.SplashActivity
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:24:13-42
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:29:19-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.parse.starter.LoginActivity
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:36:9-51
+	android:name
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:36:19-48
 activity#com.parse.starter.UserListActivity
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:32:9-54
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:37:10-55
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:32:19-51
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:37:20-52
 activity#com.parse.starter.ChatActivity
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:33:9-50
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:38:9-50
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:33:19-47
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:38:19-47
 activity#com.parse.starter.MainActivity
-ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:34:9-37:68
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:39:9-42:59
 	android:label
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:36:13-56
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:41:13-56
 	android:theme
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:40:13-41
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:45:9-47:71
+	android:value
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:47:13-68
+	android:name
+		ADDED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml:46:13-58
 uses-sdk
 INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Andrew Selvarajah\AndroidStudioProjects\Final-Project\app\src\main\AndroidManifest.xml
@@ -501,12 +525,6 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Andrew Selvarajah\
 MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.4.0.aar\ade6569f6e4291491c8e6cbc8649d2c1\AndroidManifest.xml:23:5-82
 	android:name
 		ADDED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.4.0.aar\28d3ac2979115ed91fa66b7dd57677ea\AndroidManifest.xml:21:22-79
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\25d746ac0a655d6120271803a2c38f39\AndroidManifest.xml:22:5-24:33
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\25d746ac0a655d6120271803a2c38f39\AndroidManifest.xml:23:8-40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\25d746ac0a655d6120271803a2c38f39\AndroidManifest.xml:24:8-31
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Andrew Selvarajah\.gradle\caches\transforms-1\files-1.1\play-services-base-9.4.0.aar\d029481b7df5e32b1e311b8600f6e49f\AndroidManifest.xml:20:9-22:45
 	android:exported
