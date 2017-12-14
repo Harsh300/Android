@@ -28,6 +28,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.parse.FindCallback;
@@ -131,6 +132,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation));
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
             mGoogleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+            mGoogleMap.clear();
 
             ParseQuery<ParseObject> mapMarkersQuery = new ParseQuery<ParseObject>("UserMapLocation");
 
@@ -146,6 +148,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                                 LatLng markerLocation = new LatLng(UserMapLocation.getDouble("latitude"),UserMapLocation.getDouble("longitude"));
 
                                 mGoogleMap.addMarker(new MarkerOptions().position(markerLocation).title(user + " : " + courseCode));
+                                //mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(43.9458718,-78.8967375)).title("You are here."));
                                 Log.i("marker course codes", courseCode);
                                 Log.i("latlng", markerLocation.toString());
                             }
@@ -153,6 +156,29 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                     }
                 }
             });
+
+            ParseQuery<ParseObject> myLocationOnMap = new ParseQuery<ParseObject>("UserMapLocation");
+
+            myLocationOnMap.whereEqualTo("username", ParseUser.getCurrentUser().getUsername());
+            myLocationOnMap.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+                    if (e == null){
+                        if (objects.size() > 0){
+                            for (ParseObject UserMapLocation : objects){
+                                String courseCode = UserMapLocation.getString("courseCode");
+                                String user = UserMapLocation.getString("username");
+                                LatLng markerLocation = new LatLng(UserMapLocation.getDouble("latitude"),UserMapLocation.getDouble("longitude"));
+
+                                mGoogleMap.addMarker(new MarkerOptions().position(markerLocation).title("You are here.").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                                Log.i("marker course codes", courseCode);
+                                Log.i("latlng", markerLocation.toString());
+                            }
+                        }
+                    }
+                }
+            });
+
         }catch (SecurityException e){
             e.printStackTrace();
         }
