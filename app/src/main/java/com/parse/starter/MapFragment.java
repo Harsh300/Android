@@ -1,8 +1,13 @@
 package com.parse.starter;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,6 +20,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderApi;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -22,6 +29,8 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.Locale;
 
 /**
  * Created by Onique on 2017-11-29.
@@ -32,6 +41,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     GoogleMap mGoogleMap;
     MapView googleMap;
     View mView;
+
+    LocationManager locationManager;
+    LocationListener locationListener;
 
     private final static int MY_PERMISSION_FINE_LOCATION = 101;
 
@@ -73,13 +85,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mGoogleMap = googleMap;
         mGoogleMap.clear();
 
-        LatLng userLocation = new LatLng(43.8247809, -79.2225708);
-
-        mGoogleMap.addMarker(new MarkerOptions().position(userLocation).title("Your Location"));
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation));
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
-        mGoogleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-
         //TODO: Permissions
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -94,6 +99,20 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSION_FINE_LOCATION);
             }
+        }
+        locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        try {
+            Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            //LatLng userLocation = new LatLng(location.getLatitude(),location.getLongitude());
+            //default camera view
+            LatLng userLocation = new LatLng(43.9458718, -78.8967375);
+
+            //mGoogleMap.addMarker(new MarkerOptions().position(userLocation).title("Your Location"));
+            mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation));
+            mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
+            mGoogleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        }catch (SecurityException e){
+            e.printStackTrace();
         }
     }
 
