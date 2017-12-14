@@ -10,13 +10,17 @@
         android:id="@+id/chatHistoryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chat History" />
+        android:background="#323232"
+        android:text="Chat"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/pinLocationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pin Location" />
+        android:background="#323232"
+        android:text="Pin Location"
+        android:textColor="#ffffff" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/map"

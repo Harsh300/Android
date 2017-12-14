@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 
 public class MessageListAdapter extends ArrayAdapter {
-    private int[] colours = new int[]{Color.parseColor("#F0F0F0"), Color.parseColor("#90EE90")};
+    private int[] colours = new int[]{Color.parseColor("#becfc8"), Color.parseColor("#d4dfda")};
 
     // Constructor
     public MessageListAdapter(Context context, int layout, ArrayList<String> values) {

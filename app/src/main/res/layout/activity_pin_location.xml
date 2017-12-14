@@ -28,6 +28,8 @@
         android:id="@+id/pinButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#323232"
         android:onClick="pinLocationButtonClick"
-        android:text="PIN" />
+        android:text="PIN"
+        android:textColor="#ffffff" />
 </LinearLayout>

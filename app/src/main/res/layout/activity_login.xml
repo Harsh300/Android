@@ -55,8 +55,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordEditText"
         android:layout_centerHorizontal="true"
+        android:background="#323232"
         android:onClick="signupLogin"
-        android:text=" SIgn Up" />
+        android:text=" SIgn Up"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/toggleLoginModeTextView"

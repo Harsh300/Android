@@ -13,10 +13,12 @@
 
         <Button
             android:id="@+id/backToMapButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#323232"
+            android:onClick="backToMapButton"
             android:text="Back"
-            android:onClick="backToMapButton"/>
+            android:textColor="#ffffff" />
         <ListView
             android:id="@+id/userListView"
             android:layout_width="match_parent"
