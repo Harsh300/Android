@@ -24,6 +24,7 @@ public class Tab1Fragment extends Fragment {
     private Button start, stop, finish;
     private long millisec;
     private long minutes;
+    private boolean isFinished = false;
     private CountDownTimer countDownTimer;
     private View view;
     private MediaPlayer mplayer;
@@ -36,7 +37,6 @@ public class Tab1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.tab1_fragment,container,false);
         setupUIViews();
-        finish.setVisibility(View.GONE);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +66,7 @@ public class Tab1Fragment extends Fragment {
                         finish.setVisibility(View.VISIBLE);
                         start.setClickable(false);
                         mplayer.start();
+                        isFinished = true;
 
                         checkRun = false;
 
@@ -81,6 +82,7 @@ public class Tab1Fragment extends Fragment {
             public void onClick(View v) {
                 if (checkRun == true) {
                     checkRun = false;
+            
                     countDownTimer.cancel();
                 }
             }
@@ -94,6 +96,7 @@ public class Tab1Fragment extends Fragment {
                 mplayer.stop();
                 start.setClickable(true);
                 finish.setVisibility(View.GONE);
+                isFinished = false;
             }
         });
         return view;
@@ -105,6 +108,9 @@ public class Tab1Fragment extends Fragment {
         start = (Button)view.findViewById(R.id.startbtn);
         stop = (Button)view.findViewById(R.id.stopbtn);
         finish = (Button)view.findViewById(R.id.finishbtn);
+        if(isFinished == false) {
+            finish.setVisibility(View.GONE);
+        }
     }
 
 
