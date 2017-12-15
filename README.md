@@ -32,6 +32,7 @@ Note: Important to clone to your laptop via git shell to avoid first time build 
          $ To test the chat please use two devices to communicate with eachother
 
 ![loginscreen](https://user-images.githubusercontent.com/1751112/34022815-85d6f902-e10f-11e7-8e6c-91d71fe5c6fa.JPG) ![pomodoro](https://user-images.githubusercontent.com/1751112/34023408-c3cf60e8-e112-11e7-8ad3-507c89402d2c.JPG)
+
 ![map](https://user-images.githubusercontent.com/1751112/34023365-8d0d0722-e112-11e7-86b9-b3fe6afa73a4.JPG) ![chat](https://user-images.githubusercontent.com/1751112/34023424-ddf08f6a-e112-11e7-9feb-c2737274aafb.JPG)
 
 #### Access backend via Bitnami Parse Dashboard (Hosted on AWS EC2) with the instructions below
