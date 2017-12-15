@@ -26,8 +26,10 @@ Note: Important to clone to your laptop via git shell to avoid first time build 
 | Kirsten | 1234     |
 | Tommy   | 1234     |
 | Ralphie | 1234     |
-
-         $ To test the chat please use two devices to communicate with eachother
+ 
+    $ To test the chat please use two devices to communicate with eachother
+    $ To test pomodoro set timer to 0 minutes and seconds to 5 seconds and then click start
+    $ To test map please use coordinates on your device emulator close to other markers. You may get coordinates from google maps
 
 ![loginscreen](https://user-images.githubusercontent.com/1751112/34053599-69bddec6-e195-11e7-9426-e4ab1e949944.JPG) ![pomodoro](https://user-images.githubusercontent.com/1751112/34053628-8441de0a-e195-11e7-8024-57b922cee309.JPG)
 
