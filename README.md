@@ -1,6 +1,8 @@
 # Study Buddy
 Android application by: Adwan Syed, Andrew Selvarajah, Harshan Mohanaraj
 
+![logo](https://user-images.githubusercontent.com/1751112/34025091-f3c40110-e11b-11e7-8d59-e472b1efcb7f.JPG)
+
 ## How to start?
 
 1. Open git shell in a folder of your choosing
