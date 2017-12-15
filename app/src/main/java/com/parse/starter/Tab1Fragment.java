@@ -64,6 +64,7 @@ public class Tab1Fragment extends Fragment {
                         mplayer = MediaPlayer.create(getContext(), R.raw.metronome);
                         mplayer.setLooping(true);
                         finish.setVisibility(View.VISIBLE);
+                        start.setClickable(false);
                         mplayer.start();
 
                         checkRun = false;
@@ -91,6 +92,7 @@ public class Tab1Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 mplayer.stop();
+                start.setClickable(true);
                 finish.setVisibility(View.GONE);
             }
         });
