@@ -13,7 +13,9 @@
         android:layout_below="@+id/timer"
         android:layout_marginEnd="29dp"
         android:layout_marginTop="40dp"
+        android:background="#32CD32"
         android:text="@string/start"
+        android:textColor="#ffffff"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="219dp" />
 
@@ -80,7 +82,9 @@
         android:layout_alignBottom="@+id/startbtn"
         android:layout_alignStart="@+id/secondslbl"
         android:layout_marginStart="18dp"
-        android:text="@string/stop" />
+        android:background="#ff0000 "
+        android:text="@string/stop"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/finishbtn"
@@ -88,10 +92,11 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/stopbtn"
         android:layout_alignBottom="@+id/stopbtn"
-        android:layout_marginStart="12dp"
-        android:layout_toEndOf="@+id/stopbtn"
+        android:layout_alignStart="@+id/timer"
+        android:background="#323232"
         android:elevation="0dp"
         android:text="@string/finish"
+        android:textColor="#ffffff"
         android:visibility="visible" />
 
 </RelativeLayout>
