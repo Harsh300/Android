@@ -1,5 +1,5 @@
 # Study Buddy
-![readmetop](https://user-images.githubusercontent.com/1751112/34042213-94decf74-e169-11e7-9740-2504c017e4c7.jpg)
+![image](https://user-images.githubusercontent.com/1751112/34926622-ad783188-f97e-11e7-91bf-34c34028bc96.png)
 
 ## How to start?
 
@@ -31,9 +31,7 @@ Note: Important to clone to your laptop via git shell to avoid first time build 
     $ To test pomodoro set timer to 0 minutes and seconds to 5 seconds and then click start
     $ To test map please use coordinates on your device emulator close to other markers. You may get coordinates from google maps
 
-![loginscreen](https://user-images.githubusercontent.com/1751112/34053599-69bddec6-e195-11e7-9426-e4ab1e949944.JPG) ![pomodoro](https://user-images.githubusercontent.com/1751112/34053628-8441de0a-e195-11e7-8024-57b922cee309.JPG)
-
-![map](https://user-images.githubusercontent.com/1751112/34053662-a3345d56-e195-11e7-8bc2-f44c92fb5fdc.JPG) ![chat](https://user-images.githubusercontent.com/1751112/34053685-b996405a-e195-11e7-917e-7cac9ffdce73.JPG)
+![loginscreen](https://user-images.githubusercontent.com/1751112/34053599-69bddec6-e195-11e7-9426-e4ab1e949944.JPG) ![pomodoro](https://user-images.githubusercontent.com/1751112/34053628-8441de0a-e195-11e7-8024-57b922cee309.JPG) ![map](https://user-images.githubusercontent.com/1751112/34053662-a3345d56-e195-11e7-8bc2-f44c92fb5fdc.JPG)
 
 #### Access backend via Bitnami Parse Dashboard (Hosted on AWS EC2) with the instructions below
 --------------
