@@ -39,7 +39,7 @@ Note: Important to clone to your laptop via git shell to avoid first time build 
 
     $ Go to website and login: http://ec2-54-201-233-248.us-west-2.compute.amazonaws.com/login
     $ Username: user
-    $ Password: Qg424O85l25a
+    $ Password: <Please email for password>
     $ Click on 'My Bitnami Parse API'
 
 #### If password has been removed from this repository for the backend please email adwan.syed@gmail.com
